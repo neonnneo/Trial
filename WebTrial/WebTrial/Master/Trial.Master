@@ -1,0 +1,62 @@
+﻿<!--
+ * タイトル：
+ * 説明    ：
+ *
+ * 著作権  ：
+ * 会社名  ：
+ *
+ * 変更履歴：
+ * 2020.06.07 neonnneo 新規作成 
+ *
+-->
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Trial.Master.cs" Inherits="WebTrial.Master.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+        <!-- jquery -->
+        <script src="/JavaScript/jquery/1.12.4/jquery-1.12.4.js"></script>
+        <script src="/JavaScript/jquery/1.12.4/jquery-1.12.4.min.js"></script>
+        <!-- iscroll -->
+        <script src="/JavaScript/iScroll/5.2.0/build/iscroll.js"></script>
+        <!-- drawer.js -->
+        <script src="/JavaScript/drawer/3.2.2/src/js/drawer.js"></script>
+        <!-- drawer.css -->
+        <link rel="stylesheet" href="../JavaScript/drawer/3.2.2/src/css/drawer.css" />
+        <link rel="stylesheet" href="../JavaScript/drawer/3.2.2/src/css/drawer.min.css" />
+
+    </asp:ContentPlaceHolder>
+</head>
+
+<%-- drawer--leftで左からメニューを出す --%>
+<body class="drawer drawer--left">
+	<header role="banner">
+		<button type="button" class="drawer-toggle drawer-hamburger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamburger-icon"></span>
+		</button>
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<li><a class="drawer-brand" href="#">Brand</a></li>
+				<li><a class="drawer-menu-item" href="#">Nav1</a></li>
+				<li><a class="drawer-menu-item" href="#">Nav2</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main role="main">
+		<!-- コンテンツ -->
+	</main>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.drawer').drawer();
+    });
+</script>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</html>
