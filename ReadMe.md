@@ -9,31 +9,29 @@ Webアプリケーション絡みで、試してみたいことをトライす�
 
 # Features
 
-"hoge"のセールスポイントや差別化などを説明する
+まだ書いてない
 
 # Requirement
 
 以下のライブラリを使用している。
 
-* huga 3.5.2
-* hogehuga 1.0.2
+* まだ書いてない x.x.x
+* まだ書いてない x.x.x
 
 # Installation
 
-Requirementで列挙したライブラリなどのインストール方法を説明する
+まだ書いてない
 
 ```bash
-pip install huga_package
+まだ書いてない
 ```
 
 # Usage
 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
+まだ書いてない
 
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+まだ書いてない
 ```
 
 # Note
@@ -49,6 +47,6 @@ python demo.py
 * E-mail
 
 # License
-ライセンスを明示する
+まだ書いてない
 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+"xxx" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
