@@ -11,6 +11,10 @@
 
 https://docs.djangoproject.com/ja/3.0/intro/tutorial01/
 
+
+GoogleスタイルのPythonDocstringを使う。
+https://qiita.com/11ohina017/items/118b3b42b612e527dc1d
+
 ## Version
 
 開発環境やソフトバージョンは以下の通り。
@@ -38,11 +42,22 @@ VSCodeで以下拡張機能インストールしました。
 python -m django --version
 ```
 
-2. Djangoをインストール
+2. Django、Django用Lint（問題タブのエラーや警告表示）をインストール
 ```bash
 python -m pip install Django
 ```
 
+```bash
+pip install pylint-django
+```
+
+VSCodeのsetting.jsonに以下を追加します。
+```bash
+"python.linting.pylintArgs": [
+    "--load-plugins=pylint_django",
+]
+
+```
 3. cdでプロジェクトを作成するディレクトリに移動し、プロジェクトを作成(今回はtutorialは任意の名前)します。
 ```bash
 cd /d D:\Git\
@@ -87,12 +102,23 @@ python manage.py migrate
 
 9. データベースにアプリケーションの管理者ユーザーを作成します。メールアドレスは任意。
 ```bash
-manage.py createsuperuser
+python manage.py createsuperuser
 ```
 
 10. 管理者ユーザーの登録が完了したら、以下のコマンドを入力してアプリケーションを起動します。
 ```bash
-manage.py runserver
+python manage.py runserver
+```
+
+11. 新たなアプリケーションpollsを作成します。
+```bash
+python manage.py makemigrations polls
+```
+
+12. テストコードは以下コマンドで実行します。
+
+```bash
+python manage.py test polls
 ```
 
 ## Contribution
