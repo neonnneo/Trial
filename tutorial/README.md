@@ -8,12 +8,16 @@
 本ファイルはDjangoのチュートリアルを行っての備忘録です。
 本ファイルはmarkdown形式で作成しているので、mdファイルのプレビューが可能なエディタなどで参照すると良いです。
 
+記法はGoogleスタイルのPythonDocstringを使う。
+https://qiita.com/11ohina017/items/118b3b42b612e527dc1d
 
+## Process
+・Django Tutorial　１～７を実施
 https://docs.djangoproject.com/ja/3.0/intro/tutorial01/
 
+・[Python] Django ログ出力のまとめ　でログ出力ロジックを埋め込む
+https://qiita.com/okoppe8/items/3e8ab77c5801a7d21991
 
-GoogleスタイルのPythonDocstringを使う。
-https://qiita.com/11ohina017/items/118b3b42b612e527dc1d
 
 ## Version
 
