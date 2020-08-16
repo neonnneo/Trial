@@ -61,7 +61,7 @@ ROOT_URLCONF = 'tutorial.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -86,11 +86,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 
-           'NAME': 'postgres',
-            'USER': 'postgres',
-            'PASSWORD': 'postgres',
-            'HOST': 'localhost',
-            'PORT': 5432,
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 
